@@ -173,22 +173,40 @@ body {
 }
 
 .checklist input[type="checkbox"] {
-    width: 1.5rem;
-    height: 1.5rem;
-    border: 2px solid var(--border-color);
-    border-radius: 0.5rem;
-    cursor: pointer;
-    position: relative;
-    appearance: none;
     -webkit-appearance: none;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    flex-shrink: 0;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    margin-right: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.checklist input[type="checkbox"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.3);
+    transform: scale(1.1);
+}
+
+.checklist input[type="checkbox"]:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.2);
 }
 
 .checklist input[type="checkbox"]:checked {
-    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
-    border-color: transparent;
-    transform: scale(1.1);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.checklist input[type="checkbox"]:checked:focus {
+    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.4);
 }
 
 .checklist input[type="checkbox"]:checked::after {
@@ -199,11 +217,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.checklist input[type="checkbox"]:focus {
-    outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
 }
 
 .checklist span {
