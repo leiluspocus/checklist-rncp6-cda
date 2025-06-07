@@ -37,38 +37,36 @@
           <h3>Installation et configuration de l'environnement</h3>
           <ul class="checklist">
             <li>
-              <label>
+              <label for="env-dev">
                 <input
                   type="checkbox"
+                  id="env-dev"
+                  title="Description de l'environnement de développement utilisé"
                   aria-label="Description de l'environnement de développement utilisé"
                 />
-                <span
-                  >Description de l'environnement de développement utilisé</span
-                >
+                <span>Description de l'environnement de développement utilisé</span>
               </label>
             </li>
             <li>
-              <label>
+              <label for="choix-tech">
                 <input
                   type="checkbox"
-                  aria-label="Explication des choix techniques"
+                  id="choix-tech"
+                  title="Explication des choix techniques"
+                  aria-label="Explication des choix techniques (IDE, frameworks, librairies, outils)"
                 />
-                <span
-                  >Explication des choix techniques (IDE, frameworks,
-                  librairies, outils)</span
-                >
+                <span>Explication des choix techniques (IDE, frameworks, librairies, outils)</span>
               </label>
             </li>
             <li>
-              <label>
+              <label for="process-install">
                 <input
                   type="checkbox"
-                  aria-label="Processus d'installation et de configuration"
+                  id="process-install"
+                  title="Processus d'installation et de configuration"
+                  aria-label="Processus d'installation et de configuration (Readme, Documentation Notion/Word/etc …)"
                 />
-                <span
-                  >Processus d'installation et de configuration (Readme,
-                  Documentation Notion/Word/etc …)</span
-                >
+                <span>Processus d'installation et de configuration (Readme, Documentation Notion/Word/etc …)</span>
               </label>
             </li>
           </ul>
@@ -78,54 +76,58 @@
           <h3>Développement d'interfaces utilisateur.ices</h3>
           <ul class="checklist">
             <li>
-              <label>
+              <label for="maquettes">
                 <input
                   type="checkbox"
+                  id="maquettes"
+                  title="Présentation des maquettes et wireframes"
                   aria-label="Présentation des maquettes et wireframes"
                 />
                 <span>Présentation des maquettes et wireframes</span>
               </label>
             </li>
             <li>
-              <label>
+              <label for="ergonomie">
                 <input
                   type="checkbox"
-                  aria-label="Justification des choix ergonomiques"
+                  id="ergonomie"
+                  title="Justification des choix ergonomiques"
+                  aria-label="Justification des choix ergonomiques et d'UX/UI"
                 />
                 <span>Justification des choix ergonomiques et d'UX/UI</span>
               </label>
             </li>
             <li>
-              <label>
+              <label for="tech-front">
                 <input
                   type="checkbox"
-                  aria-label="Description des technologies front-end"
+                  id="tech-front"
+                  title="Description des technologies front-end"
+                  aria-label="Description des technologies front-end utilisées (HTML, CSS, JavaScript, frameworks)"
                 />
-                <span
-                  >Description des technologies front-end utilisées (HTML, CSS,
-                  JavaScript, frameworks)</span
-                >
+                <span>Description des technologies front-end utilisées (HTML, CSS, JavaScript, frameworks)</span>
               </label>
             </li>
             <li>
-              <label>
+              <label for="responsive">
                 <input
                   type="checkbox"
-                  aria-label="Adaptation responsive/mobile"
+                  id="responsive"
+                  title="Adaptation responsive/mobile"
+                  aria-label="Adaptation responsive/mobile des interfaces"
                 />
                 <span>Adaptation responsive/mobile des interfaces</span>
               </label>
             </li>
             <li>
-              <label>
+              <label for="accessibilite">
                 <input
                   type="checkbox"
-                  aria-label="Mise en œuvre des bonnes pratiques d'accessibilité"
+                  id="accessibilite"
+                  title="Mise en œuvre des bonnes pratiques d'accessibilité"
+                  aria-label="Mise en œuvre des bonnes pratiques d'accessibilité (couleur / label / zone cliquable etc …)"
                 />
-                <span
-                  >Mise en œuvre des bonnes pratiques d'accessibilité (couleur /
-                  label / zone cliquable etc …)</span
-                >
+                <span>Mise en œuvre des bonnes pratiques d'accessibilité (couleur / label / zone cliquable etc …)</span>
               </label>
             </li>
           </ul>
@@ -135,42 +137,27 @@
           <h3>Développement des composants métier</h3>
           <ul class="checklist">
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Architecture des composants métier"
-                />
-                <span
-                  >Architecture des composants métier développés (Structure,
-                  Découpage …)</span
-                >
+              <label for="archi-composants">
+                <input type="checkbox" id="archi-composants" title="Architecture des composants métier" aria-label="Architecture des composants métier développés (Structure, Découpage …)">
+                <span>Architecture des composants métier développés (Structure, Découpage …)</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Patterns de conception" />
+              <label for="patterns">
+                <input type="checkbox" id="patterns" title="Patterns de conception" aria-label="Patterns de conception implémentés">
                 <span>Patterns de conception implémentés</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Gestion des règles métier" />
-                <span
-                  >Gestion des règles métier (isolation des règles, possibilité
-                  de les faire évoluer sans impacter le reste du projet …)</span
-                >
+              <label for="regles-metier">
+                <input type="checkbox" id="regles-metier" title="Gestion des règles métier" aria-label="Gestion des règles métier (isolation des règles, possibilité de les faire évoluer sans impacter le reste du projet …)">
+                <span>Gestion des règles métier (isolation des règles, possibilité de les faire évoluer sans impacter le reste du projet …)</span>
               </label>
             </li>
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Sécurisation des composants métier"
-                />
-                <span
-                  >Sécurisation des composants métier (gestion des permissions,
-                  validation des entrées …)</span
-                >
+              <label for="securite-composants">
+                <input type="checkbox" id="securite-composants" title="Sécurisation des composants métier" aria-label="Sécurisation des composants métier (gestion des permissions, validation des entrées …)">
+                <span>Sécurisation des composants métier (gestion des permissions, validation des entrées …)</span>
               </label>
             </li>
           </ul>
@@ -180,44 +167,32 @@
           <h3>Gestion de projet</h3>
           <ul class="checklist">
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Méthodologie de gestion de projet"
-                />
-                <span
-                  >Méthodologie de gestion de projet utilisée (scrum, kanban,
-                  shape up, cycle en V …)</span
-                >
+              <label for="methodologie">
+                <input type="checkbox" id="methodologie" title="Méthodologie de gestion de projet" aria-label="Méthodologie de gestion de projet utilisée (scrum, kanban, shape up, cycle en V …)">
+                <span>Méthodologie de gestion de projet utilisée (scrum, kanban, shape up, cycle en V …)</span>
               </label>
             </li>
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Planification et suivi des tâches"
-                />
+              <label for="planification">
+                <input type="checkbox" id="planification" title="Planification et suivi des tâches" aria-label="Planification et suivi des tâches">
                 <span>Planification et suivi des tâches</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Gestion des versions" />
+              <label for="versions">
+                <input type="checkbox" id="versions" title="Gestion des versions" aria-label="Gestion des versions (Git ou autre)">
                 <span>Gestion des versions (Git ou autre)</span>
               </label>
             </li>
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Collaboration et communication"
-                />
+              <label for="collaboration">
+                <input type="checkbox" id="collaboration" title="Collaboration et communication" aria-label="Collaboration et communication au sein de l'équipe">
                 <span>Collaboration et communication au sein de l'équipe</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Gestion des risques" />
+              <label for="risques">
+                <input type="checkbox" id="risques" title="Gestion des risques" aria-label="Gestion des risques et problèmes rencontrés">
                 <span>Gestion des risques et problèmes rencontrés</span>
               </label>
             </li>
@@ -399,33 +374,33 @@
           <h3>Tests de l'application</h3>
           <ul class="checklist">
             <li>
-              <label>
-                <input type="checkbox" aria-label="Stratégie de tests" />
+              <label for="strategie-tests">
+                <input type="checkbox" id="strategie-tests" title="Stratégie de tests" aria-label="Stratégie de tests (unitaires, intégration, e2e)">
                 <span>Stratégie de tests (unitaires, intégration, e2e)</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Plans de tests" />
+              <label for="plans-tests">
+                <input type="checkbox" id="plans-tests" title="Plans de tests" aria-label="Plans de tests réalisés">
                 <span>Plans de tests réalisés</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Outils de tests" />
+              <label for="outils-tests">
+                <input type="checkbox" id="outils-tests" title="Outils de tests" aria-label="Outils et frameworks de tests utilisés">
                 <span>Outils et frameworks de tests utilisés</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Résultats des tests" />
+              <label for="resultats-tests">
+                <input type="checkbox" id="resultats-tests" title="Résultats des tests" aria-label="Résultats des tests et corrections apportées">
                 <span>Résultats des tests et corrections apportées</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Tests de sécurité" />
-                <span>Tests de sécurité</span>
+              <label for="tests-securite">
+                <input type="checkbox" id="tests-securite" title="Tests de sécurité" aria-label="Tests de sécurité et de performance">
+                <span>Tests de sécurité et de performance</span>
               </label>
             </li>
           </ul>
@@ -474,32 +449,32 @@
           <h3>Démarche DevOps</h3>
           <ul class="checklist">
             <li>
-              <label>
-                <input type="checkbox" aria-label="CI/CD" />
+              <label for="cicd">
+                <input type="checkbox" id="cicd" title="CI/CD" aria-label="Intégration continue / Déploiement continu (CI/CD)">
                 <span>Intégration continue / Déploiement continu (CI/CD)</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Automatisation" />
+              <label for="automatisation">
+                <input type="checkbox" id="automatisation" title="Automatisation" aria-label="Automatisation des processus">
                 <span>Automatisation des processus</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Monitoring" />
+              <label for="monitoring">
+                <input type="checkbox" id="monitoring" title="Monitoring" aria-label="Monitoring et alerting">
                 <span>Monitoring et alerting</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Gestion des versions" />
+              <label for="versions-releases">
+                <input type="checkbox" id="versions-releases" title="Gestion des versions" aria-label="Gestion des versions et des releases">
                 <span>Gestion des versions et des releases</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Sécurisation du pipeline" />
+              <label for="securite-pipeline">
+                <input type="checkbox" id="securite-pipeline" title="Sécurisation du pipeline" aria-label="Sécurisation du pipeline de déploiement">
                 <span>Sécurisation du pipeline de déploiement</span>
               </label>
             </li>
@@ -514,37 +489,32 @@
           <h3>Qualité du code et sécurité</h3>
           <ul class="checklist">
             <li>
-              <label>
-                <input type="checkbox" aria-label="Standards de code" />
+              <label for="standards">
+                <input type="checkbox" id="standards" title="Respect des standards de code" aria-label="Respect des standards de code">
                 <span>Respect des standards de code</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Gestion des erreurs" />
+              <label for="erreurs">
+                <input type="checkbox" id="erreurs" title="Gestion des erreurs" aria-label="Gestion des erreurs et exceptions">
                 <span>Gestion des erreurs et exceptions</span>
               </label>
             </li>
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Protection contre les vulnérabilités"
-                />
-                <span
-                  >Protection contre les vulnérabilités courantes (OWASP)</span
-                >
+              <label for="vulnerabilites">
+                <input type="checkbox" id="vulnerabilites" title="Protection contre les vulnérabilités" aria-label="Protection contre les vulnérabilités courantes (OWASP)">
+                <span>Protection contre les vulnérabilités courantes (OWASP)</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Journalisation" />
-                <span>Journalisation</span>
+              <label for="journalisation">
+                <input type="checkbox" id="journalisation" title="Journalisation" aria-label="Journalisation et audit">
+                <span>Journalisation et audit</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Performance" />
+              <label for="performance">
+                <input type="checkbox" id="performance" title="Performance" aria-label="Performance et optimisations">
                 <span>Performance et optimisations</span>
               </label>
             </li>
@@ -555,35 +525,32 @@
           <h3>Documentation et présentation</h3>
           <ul class="checklist">
             <li>
-              <label>
-                <input type="checkbox" aria-label="Clarté du rapport" />
+              <label for="clarte">
+                <input type="checkbox" id="clarte" title="Clarté du rapport" aria-label="Clarté et structure du rapport">
                 <span>Clarté et structure du rapport</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Illustrations" />
-                <span
-                  >Illustrations pertinentes (captures d'écran,
-                  diagrammes)</span
-                >
+              <label for="illustrations">
+                <input type="checkbox" id="illustrations" title="Illustrations" aria-label="Illustrations pertinentes (captures d'écran, diagrammes)">
+                <span>Illustrations pertinentes (captures d'écran, diagrammes)</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Glossaire" />
+              <label for="glossaire">
+                <input type="checkbox" id="glossaire" title="Glossaire" aria-label="Glossaire des termes techniques">
                 <span>Glossaire des termes techniques</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Support de présentation" />
+              <label for="presentation">
+                <input type="checkbox" id="presentation" title="Support de présentation" aria-label="Support de présentation (diaporama) préparé">
                 <span>Support de présentation (diaporama) préparé</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Démonstration" />
+              <label for="demo">
+                <input type="checkbox" id="demo" title="Démonstration" aria-label="Démonstration fonctionnelle prévue ou vidéo">
                 <span>Démonstration fonctionnelle prévue ou vidéo</span>
               </label>
             </li>
@@ -594,17 +561,14 @@
           <h3>Compétences en anglais</h3>
           <ul class="checklist">
             <li>
-              <label>
-                <input type="checkbox" aria-label="Résumé en anglais" />
+              <label for="resume-en">
+                <input type="checkbox" id="resume-en" title="Inclure un résumé en anglais" aria-label="Inclure un résumé en anglais">
                 <span>Inclure un résumé en anglais</span>
               </label>
             </li>
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Documentation technique en anglais"
-                />
+              <label for="doc-tech-en">
+                <input type="checkbox" id="doc-tech-en" title="Documentation technique en anglais" aria-label="Documentation technique en anglais">
                 <span>Documentation technique en anglais</span>
               </label>
             </li>
