@@ -207,36 +207,24 @@
         </h2>
 
         <div class="section">
-          <h3>Analyse des besoins et maquettage</h3>
+          <h3>Analyse des besoins</h3>
           <ul class="checklist">
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Recueil et analyse des besoins"
-                />
-                <span
-                  >Recueil et analyse des besoins des utilisateurs et
-                  utilisatrices</span
-                >
+              <label for="analyse-besoins">
+                <input type="checkbox" id="analyse-besoins" title="Analyse des besoins" aria-label="Analyse détaillée des besoins fonctionnels et techniques">
+                <span>Analyse détaillée des besoins fonctionnels et techniques</span>
               </label>
             </li>
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Spécifications fonctionnelles et techniques"
-                />
-                <span>Spécifications fonctionnelles et techniques</span>
+              <label for="cahier-charges">
+                <input type="checkbox" id="cahier-charges" title="Cahier des charges" aria-label="Cahier des charges et spécifications">
+                <span>Cahier des charges et spécifications</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Validation des besoins" />
-                <span
-                  >Validation des besoins avec les parties prenantes
-                  (client/clientes - dev - produit …)</span
-                >
+              <label for="maquettes-ui">
+                <input type="checkbox" id="maquettes-ui" title="Maquettes UI" aria-label="Maquettes et wireframes de l'interface">
+                <span>Maquettes et wireframes de l'interface</span>
               </label>
             </li>
           </ul>
@@ -246,119 +234,117 @@
           <h3>Architecture logicielle</h3>
           <ul class="checklist">
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Présentation de l'architecture"
-                />
-                <span
-                  >Présentation de l'architecture logicielle (diagrammes UML ou
-                  autres)</span
-                >
+              <label for="architecture">
+                <input type="checkbox" id="architecture" title="Architecture" aria-label="Architecture globale de l'application">
+                <span>Architecture globale de l'application</span>
               </label>
             </li>
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Explication des choix d'architecture"
-                />
-                <span>Explication des choix d'architecture</span>
+              <label for="patterns-archi">
+                <input type="checkbox" id="patterns-archi" title="Patterns d'architecture" aria-label="Patterns d'architecture utilisés">
+                <span>Patterns d'architecture utilisés</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Organisation en couches" />
-                <span>Organisation en couches de l'application</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" aria-label="Patterns architecturaux" />
-                <span>Patterns architecturaux utilisés (MVC, MVVM, etc.)</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" aria-label="Mécanismes d'intégration" />
-                <span
-                  >Mécanismes d'intégration et d'interopérabilité (api rest,
-                  soap, graphql etc … format json, xml etc …)</span
-                >
+              <label for="securite-archi">
+                <input type="checkbox" id="securite-archi" title="Sécurité architecture" aria-label="Aspects de sécurité dans l'architecture">
+                <span>Aspects de sécurité dans l'architecture</span>
               </label>
             </li>
           </ul>
         </div>
 
         <div class="section">
-          <h3>Conception et mise en place de base de données</h3>
+          <h3>Conception de la base de données</h3>
           <ul class="checklist">
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Modèle conceptuel de données"
-                />
-                <span>Modèle conceptuel de données (MCD)</span>
+              <label for="modele-donnees">
+                <input type="checkbox" id="modele-donnees" title="Modèle de données" aria-label="Modèle de données et schéma">
+                <span>Modèle de données et schéma</span>
               </label>
             </li>
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Modèle physique de données"
-                />
-                <span>Modèle physique de données (MPD)</span>
+              <label for="optimisation-bd">
+                <input type="checkbox" id="optimisation-bd" title="Optimisation BD" aria-label="Optimisation et indexation">
+                <span>Optimisation et indexation</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Modèle logique de données" />
-                <span>Modèle logique de données (MLD)</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" aria-label="Scripts de création" />
-                <span>Scripts de création de la base de données</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" aria-label="Sécurisation des accès" />
-                <span>Sécurisation des accès à la base de données</span>
+              <label for="securite-donnees">
+                <input type="checkbox" id="securite-donnees" title="Sécurité données" aria-label="Sécurité et protection des données">
+                <span>Sécurité et protection des données</span>
               </label>
             </li>
           </ul>
         </div>
 
         <div class="section">
-          <h3>Développement des composants d'accès aux données</h3>
+          <h3>Composants d'accès aux données</h3>
           <ul class="checklist">
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Stratégie d'accès aux données"
-                />
-                <span
-                  >Stratégie d'accès aux données (ORM, DAO, Repository)</span
-                >
+              <label for="orm">
+                <input type="checkbox" id="orm" title="ORM" aria-label="Utilisation d'un ORM ou d'un framework de persistance">
+                <span>Utilisation d'un ORM ou d'un framework de persistance</span>
               </label>
             </li>
             <li>
-              <label>
-                <input
-                  type="checkbox"
-                  aria-label="Implémentation des requêtes SQL"
-                />
-                <span>Implémentation des requêtes SQL</span>
+              <label for="requetes">
+                <input type="checkbox" id="requetes" title="Requêtes" aria-label="Gestion des requêtes et transactions">
+                <span>Gestion des requêtes et transactions</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Intégration NoSQL" />
-                <span>Intégration éventuelle de bases NoSQL</span>
+              <label for="cache">
+                <input type="checkbox" id="cache" title="Cache" aria-label="Mise en cache et optimisation des performances">
+                <span>Mise en cache et optimisation des performances</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Documentation technique</h3>
+          <ul class="checklist">
+            <li>
+              <label for="doc-api">
+                <input type="checkbox" id="doc-api" title="Documentation API" aria-label="Documentation technique de l'API">
+                <span>Documentation technique de l'API</span>
+              </label>
+            </li>
+            <li>
+              <label for="doc-code">
+                <input type="checkbox" id="doc-code" title="Documentation code" aria-label="Documentation du code source">
+                <span>Documentation du code source</span>
+              </label>
+            </li>
+            <li>
+              <label for="doc-deploiement">
+                <input type="checkbox" id="doc-deploiement" title="Documentation déploiement" aria-label="Documentation de déploiement">
+                <span>Documentation de déploiement</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Stratégie de déploiement</h3>
+          <ul class="checklist">
+            <li>
+              <label for="environnement">
+                <input type="checkbox" id="environnement" title="Environnement" aria-label="Environnement de déploiement">
+                <span>Environnement de déploiement</span>
+              </label>
+            </li>
+            <li>
+              <label for="configuration">
+                <input type="checkbox" id="configuration" title="Configuration" aria-label="Configuration et paramètres">
+                <span>Configuration et paramètres</span>
+              </label>
+            </li>
+            <li>
+              <label for="securite-deploiement">
+                <input type="checkbox" id="securite-deploiement" title="Sécurité déploiement" aria-label="Sécurité du déploiement">
+                <span>Sécurité du déploiement</span>
               </label>
             </li>
           </ul>
@@ -570,6 +556,102 @@
               <label for="doc-tech-en">
                 <input type="checkbox" id="doc-tech-en" title="Documentation technique en anglais" aria-label="Documentation technique en anglais">
                 <span>Documentation technique en anglais</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Validation des besoins</h3>
+          <ul class="checklist">
+            <li>
+              <label for="validation-besoins">
+                <input type="checkbox" id="validation-besoins" title="Validation des besoins" aria-label="Validation des besoins avec les parties prenantes">
+                <span>Validation des besoins avec les parties prenantes (client/clientes - dev - produit …)</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Organisation et architecture</h3>
+          <ul class="checklist">
+            <li>
+              <label for="organisation-couches">
+                <input type="checkbox" id="organisation-couches" title="Organisation en couches" aria-label="Organisation en couches de l'application">
+                <span>Organisation en couches de l'application</span>
+              </label>
+            </li>
+            <li>
+              <label for="patterns-utilises">
+                <input type="checkbox" id="patterns-utilises" title="Patterns architecturaux" aria-label="Patterns architecturaux utilisés (MVC, MVVM, etc.)">
+                <span>Patterns architecturaux utilisés (MVC, MVVM, etc.)</span>
+              </label>
+            </li>
+            <li>
+              <label for="integration-api">
+                <input type="checkbox" id="integration-api" title="Mécanismes d'intégration" aria-label="Mécanismes d'intégration et d'interopérabilité">
+                <span>Mécanismes d'intégration et d'interopérabilité (api rest, soap, graphql etc … format json, xml etc …)</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Modèles de données</h3>
+          <ul class="checklist">
+            <li>
+              <label for="mcd">
+                <input type="checkbox" id="mcd" title="Modèle conceptuel" aria-label="Modèle conceptuel de données (MCD)">
+                <span>Modèle conceptuel de données (MCD)</span>
+              </label>
+            </li>
+            <li>
+              <label for="mpd">
+                <input type="checkbox" id="mpd" title="Modèle physique" aria-label="Modèle physique de données (MPD)">
+                <span>Modèle physique de données (MPD)</span>
+              </label>
+            </li>
+            <li>
+              <label for="mld">
+                <input type="checkbox" id="mld" title="Modèle logique" aria-label="Modèle logique de données (MLD)">
+                <span>Modèle logique de données (MLD)</span>
+              </label>
+            </li>
+            <li>
+              <label for="scripts-bd">
+                <input type="checkbox" id="scripts-bd" title="Scripts de création" aria-label="Scripts de création de la base de données">
+                <span>Scripts de création de la base de données</span>
+              </label>
+            </li>
+            <li>
+              <label for="securite-acces">
+                <input type="checkbox" id="securite-acces" title="Sécurisation des accès" aria-label="Sécurisation des accès à la base de données">
+                <span>Sécurisation des accès à la base de données</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Accès aux données</h3>
+          <ul class="checklist">
+            <li>
+              <label for="strategie-acces">
+                <input type="checkbox" id="strategie-acces" title="Stratégie d'accès" aria-label="Stratégie d'accès aux données">
+                <span>Stratégie d'accès aux données (ORM, DAO, Repository)</span>
+              </label>
+            </li>
+            <li>
+              <label for="requetes-sql">
+                <input type="checkbox" id="requetes-sql" title="Requêtes SQL" aria-label="Implémentation des requêtes SQL">
+                <span>Implémentation des requêtes SQL</span>
+              </label>
+            </li>
+            <li>
+              <label for="nosql">
+                <input type="checkbox" id="nosql" title="Intégration NoSQL" aria-label="Intégration éventuelle de bases NoSQL">
+                <span>Intégration éventuelle de bases NoSQL</span>
               </label>
             </li>
           </ul>
