@@ -27,6 +27,14 @@
       </div>
     </header>
 
+    <div class="filters container">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="demo1">Démo 1</button>
+      <button class="filter-btn" data-filter="demo2">Démo 2</button>
+      <button class="filter-btn" data-filter="demo3">Démo 3</button>
+      <button class="filter-btn" data-filter="demo4">Démo 4</button>
+    </div>
+
     <main class="container">
       <section class="block" id="block1">
         <h2 class="block-title">
@@ -45,6 +53,8 @@
                   aria-label="Description de l'environnement de développement utilisé"
                 />
                 <span>Description de l'environnement de développement utilisé</span>
+                <span class="demo-badge">Démo 2</span>
+
               </label>
             </li>
             <li>
@@ -56,6 +66,7 @@
                   aria-label="Explication des choix techniques (IDE, frameworks, librairies, outils)"
                 />
                 <span>Explication des choix techniques (IDE, frameworks, librairies, outils)</span>
+                <span class="demo-badge">Démo 2</span>
               </label>
             </li>
             <li>
@@ -67,6 +78,7 @@
                   aria-label="Processus d'installation et de configuration (Readme, Documentation Notion/Word/etc …)"
                 />
                 <span>Processus d'installation et de configuration (Readme, Documentation Notion/Word/etc …)</span>
+                <span class="demo-badge">Démo 2</span>
               </label>
             </li>
           </ul>
@@ -84,6 +96,7 @@
                   aria-label="Présentation des maquettes et wireframes"
                 />
                 <span>Présentation des maquettes et wireframes</span>
+                <span class="demo-badge">Démo 1</span>
               </label>
             </li>
             <li>
@@ -95,6 +108,7 @@
                   aria-label="Justification des choix ergonomiques et d'UX/UI"
                 />
                 <span>Justification des choix ergonomiques et d'UX/UI</span>
+                <span class="demo-badge">Démo 1</span>
               </label>
             </li>
             <li>
@@ -106,6 +120,7 @@
                   aria-label="Description des technologies front-end utilisées (HTML, CSS, JavaScript, frameworks)"
                 />
                 <span>Description des technologies front-end utilisées (HTML, CSS, JavaScript, frameworks)</span>
+                <span class="demo-badge">Démo 2</span>
               </label>
             </li>
             <li>
@@ -117,6 +132,7 @@
                   aria-label="Adaptation responsive/mobile des interfaces"
                 />
                 <span>Adaptation responsive/mobile des interfaces</span>
+                <span class="demo-badge">Démo 1</span>
               </label>
             </li>
             <li>
@@ -128,6 +144,7 @@
                   aria-label="Mise en œuvre des bonnes pratiques d'accessibilité (couleur / label / zone cliquable etc …)"
                 />
                 <span>Mise en œuvre des bonnes pratiques d'accessibilité (couleur / label / zone cliquable etc …)</span>
+                <span class="demo-badge">Démo 1</span>
               </label>
             </li>
           </ul>
@@ -140,24 +157,28 @@
               <label for="archi-composants">
                 <input type="checkbox" id="archi-composants" title="Architecture des composants métier" aria-label="Architecture des composants métier développés (Structure, Découpage …)">
                 <span>Architecture des composants métier développés (Structure, Découpage …)</span>
+                <span class="demo-badge">Démo 3</span>
               </label>
             </li>
             <li>
               <label for="patterns">
                 <input type="checkbox" id="patterns" title="Patterns de conception" aria-label="Patterns de conception implémentés">
                 <span>Patterns de conception implémentés</span>
+                <span class="demo-badge">Démo 3</span>
               </label>
             </li>
             <li>
               <label for="regles-metier">
                 <input type="checkbox" id="regles-metier" title="Gestion des règles métier" aria-label="Gestion des règles métier (isolation des règles, possibilité de les faire évoluer sans impacter le reste du projet …)">
                 <span>Gestion des règles métier (isolation des règles, possibilité de les faire évoluer sans impacter le reste du projet …)</span>
+                <span class="demo-badge">Démo 4</span>
               </label>
             </li>
             <li>
               <label for="securite-composants">
                 <input type="checkbox" id="securite-composants" title="Sécurisation des composants métier" aria-label="Sécurisation des composants métier (gestion des permissions, validation des entrées …)">
                 <span>Sécurisation des composants métier (gestion des permissions, validation des entrées …)</span>
+                <span class="demo-badge">Démo 3</span>
               </label>
             </li>
           </ul>
@@ -170,30 +191,35 @@
               <label for="methodologie">
                 <input type="checkbox" id="methodologie" title="Méthodologie de gestion de projet" aria-label="Méthodologie de gestion de projet utilisée (scrum, kanban, shape up, cycle en V …)">
                 <span>Méthodologie de gestion de projet utilisée (scrum, kanban, shape up, cycle en V …)</span>
+                <span class="demo-badge">Démo 1</span>
               </label>
             </li>
             <li>
               <label for="planification">
                 <input type="checkbox" id="planification" title="Planification et suivi des tâches" aria-label="Planification et suivi des tâches">
                 <span>Planification et suivi des tâches</span>
+                <span class="demo-badge">Démo 1</span>
               </label>
             </li>
             <li>
               <label for="versions">
                 <input type="checkbox" id="versions" title="Gestion des versions" aria-label="Gestion des versions (Git ou autre)">
                 <span>Gestion des versions (Git ou autre)</span>
+                <span class="demo-badge">Démo 2</span>
               </label>
             </li>
             <li>
               <label for="collaboration">
                 <input type="checkbox" id="collaboration" title="Collaboration et communication" aria-label="Collaboration et communication au sein de l'équipe">
                 <span>Collaboration et communication au sein de l'équipe</span>
+                <span class="demo-badge">Démo 1</span>
               </label>
             </li>
             <li>
               <label for="risques">
                 <input type="checkbox" id="risques" title="Gestion des risques" aria-label="Gestion des risques et problèmes rencontrés">
                 <span>Gestion des risques et problèmes rencontrés</span>
+                <span class="demo-badge">RNCP blanc</span>
               </label>
             </li>
           </ul>
@@ -212,19 +238,22 @@
             <li>
               <label for="analyse-besoins">
                 <input type="checkbox" id="analyse-besoins" title="Analyse des besoins" aria-label="Analyse détaillée des besoins fonctionnels et techniques">
-                <span>Analyse détaillée des besoins fonctionnels et techniques</span>
+                <span>Analyse des besoins fonctionnels et techniques</span>
+                <span class="demo-badge">Démo 1</span>
               </label>
             </li>
             <li>
               <label for="cahier-charges">
                 <input type="checkbox" id="cahier-charges" title="Cahier des charges" aria-label="Cahier des charges et spécifications">
                 <span>Cahier des charges et spécifications</span>
+                <span class="demo-badge">Démo 1</span>
               </label>
             </li>
             <li>
               <label for="maquettes-ui">
                 <input type="checkbox" id="maquettes-ui" title="Maquettes UI" aria-label="Maquettes et wireframes de l'interface">
                 <span>Maquettes et wireframes de l'interface</span>
+                <span class="demo-badge">Démo 1</span>
               </label>
             </li>
           </ul>
@@ -237,18 +266,21 @@
               <label for="architecture">
                 <input type="checkbox" id="architecture" title="Architecture" aria-label="Architecture globale de l'application">
                 <span>Architecture globale de l'application</span>
+                <span class="demo-badge">Démo 2</span>
               </label>
             </li>
             <li>
               <label for="patterns-archi">
                 <input type="checkbox" id="patterns-archi" title="Patterns d'architecture" aria-label="Patterns d'architecture utilisés">
                 <span>Patterns d'architecture utilisés</span>
+                <span class="demo-badge">Démo 3</span>
               </label>
             </li>
             <li>
               <label for="securite-archi">
                 <input type="checkbox" id="securite-archi" title="Sécurité architecture" aria-label="Aspects de sécurité dans l'architecture">
                 <span>Aspects de sécurité dans l'architecture</span>
+                <span class="demo-badge">Démo 3</span>
               </label>
             </li>
           </ul>
@@ -261,18 +293,21 @@
               <label for="modele-donnees">
                 <input type="checkbox" id="modele-donnees" title="Modèle de données" aria-label="Modèle de données et schéma">
                 <span>Modèle de données et schéma</span>
+                <span class="demo-badge">Démo 3</span>
               </label>
             </li>
             <li>
               <label for="optimisation-bd">
                 <input type="checkbox" id="optimisation-bd" title="Optimisation BD" aria-label="Optimisation et indexation">
                 <span>Optimisation et indexation</span>
+                <span class="demo-badge">RNCP blanc</span>
               </label>
             </li>
             <li>
               <label for="securite-donnees">
                 <input type="checkbox" id="securite-donnees" title="Sécurité données" aria-label="Sécurité et protection des données">
                 <span>Sécurité et protection des données</span>
+                <span class="demo-badge">Démo 2 - 3 - 4 </span>
               </label>
             </li>
           </ul>
@@ -285,18 +320,21 @@
               <label for="orm">
                 <input type="checkbox" id="orm" title="ORM" aria-label="Utilisation d'un ORM ou d'un framework de persistance">
                 <span>Utilisation d'un ORM ou d'un framework de persistance</span>
+                <span class="demo-badge">Démo 3</span>
               </label>
             </li>
             <li>
               <label for="requetes">
                 <input type="checkbox" id="requetes" title="Requêtes" aria-label="Gestion des requêtes et transactions">
                 <span>Gestion des requêtes et transactions</span>
+                <span class="demo-badge">Démo 3</span>
               </label>
             </li>
             <li>
               <label for="cache">
                 <input type="checkbox" id="cache" title="Cache" aria-label="Mise en cache et optimisation des performances">
                 <span>Mise en cache et optimisation des performances</span>
+                <span class="demo-badge">RNCP blanc</span>
               </label>
             </li>
           </ul>
@@ -309,18 +347,21 @@
               <label for="doc-api">
                 <input type="checkbox" id="doc-api" title="Documentation API" aria-label="Documentation technique de l'API">
                 <span>Documentation technique de l'API</span>
+                <span class="demo-badge">Démo 3</span>
               </label>
             </li>
             <li>
               <label for="doc-code">
                 <input type="checkbox" id="doc-code" title="Documentation code" aria-label="Documentation du code source">
                 <span>Documentation du code source</span>
+                <span class="demo-badge">Démo 2 - 3 - 4</span>
               </label>
             </li>
             <li>
               <label for="doc-deploiement">
                 <input type="checkbox" id="doc-deploiement" title="Documentation déploiement" aria-label="Documentation de déploiement">
                 <span>Documentation de déploiement</span>
+                <span class="demo-badge">Démo 4</span>
               </label>
             </li>
           </ul>
@@ -331,20 +372,23 @@
           <ul class="checklist">
             <li>
               <label for="environnement">
-                <input type="checkbox" id="environnement" title="Environnement" aria-label="Environnement de déploiement">
-                <span>Environnement de déploiement</span>
+                <input type="checkbox" id="environnement" title="Environnement" aria-label="Environnement de test">
+                <span>Environnement de test</span>
+                <span class="demo-badge">Démo 4</span>
               </label>
             </li>
             <li>
               <label for="configuration">
                 <input type="checkbox" id="configuration" title="Configuration" aria-label="Configuration et paramètres">
                 <span>Configuration et paramètres</span>
+                <span class="demo-badge">Démo 4</span>
               </label>
             </li>
             <li>
               <label for="securite-deploiement">
                 <input type="checkbox" id="securite-deploiement" title="Sécurité déploiement" aria-label="Sécurité du déploiement">
                 <span>Sécurité du déploiement</span>
+                <span class="demo-badge">Démo 4</span>
               </label>
             </li>
           </ul>
@@ -363,30 +407,35 @@
               <label for="strategie-tests">
                 <input type="checkbox" id="strategie-tests" title="Stratégie de tests" aria-label="Stratégie de tests (unitaires, intégration, e2e)">
                 <span>Stratégie de tests (unitaires, intégration, e2e)</span>
+                <span class="demo-badge">Démo 4</span>
               </label>
             </li>
             <li>
               <label for="plans-tests">
                 <input type="checkbox" id="plans-tests" title="Plans de tests" aria-label="Plans de tests réalisés">
                 <span>Plans de tests réalisés</span>
+                <span class="demo-badge">Démo 4</span>
               </label>
             </li>
             <li>
               <label for="outils-tests">
                 <input type="checkbox" id="outils-tests" title="Outils de tests" aria-label="Outils et frameworks de tests utilisés">
                 <span>Outils et frameworks de tests utilisés</span>
+                <span class="demo-badge">Démo 4</span>
               </label>
             </li>
             <li>
               <label for="resultats-tests">
                 <input type="checkbox" id="resultats-tests" title="Résultats des tests" aria-label="Résultats des tests et corrections apportées">
                 <span>Résultats des tests et corrections apportées</span>
+                <span class="demo-badge">Démo 4</span>
               </label>
             </li>
             <li>
               <label for="tests-securite">
                 <input type="checkbox" id="tests-securite" title="Tests de sécurité" aria-label="Tests de sécurité et de performance">
                 <span>Tests de sécurité et de performance</span>
+                <span class="demo-badge">Démo 4</span>
               </label>
             </li>
           </ul>
@@ -399,18 +448,21 @@
               <label>
                 <input type="checkbox" aria-label="Documentation technique" />
                 <span>Documentation technique</span>
+                <span class="demo-badge">Démo 2 - 3 - 4</span>
               </label>
             </li>
             <li>
               <label>
                 <input type="checkbox" aria-label="Documentation utilisateur" />
                 <span>Documentation utilisateur/utilisatrices</span>
+                <span class="demo-badge">RNCP blanc ( si besoin ) </span>
               </label>
             </li>
             <li>
               <label>
                 <input type="checkbox" aria-label="Stratégie de déploiement" />
                 <span>Stratégie de déploiement</span>
+                <span class="demo-badge">Démo 4</span>
               </label>
             </li>
             <li>
@@ -420,12 +472,14 @@
                   aria-label="Configuration des environnements"
                 />
                 <span>Configuration des environnements</span>
+                <span class="demo-badge">Démo 4</span>
               </label>
             </li>
             <li>
               <label>
                 <input type="checkbox" aria-label="Procédures de sauvegarde" />
                 <span>Procédures de sauvegarde et de restauration</span>
+                <span class="demo-badge">RNCP blanc </span>
               </label>
             </li>
           </ul>
@@ -438,6 +492,7 @@
               <label for="cicd">
                 <input type="checkbox" id="cicd" title="CI/CD" aria-label="Intégration continue / Déploiement continu (CI/CD)">
                 <span>Intégration continue / Déploiement continu (CI/CD)</span>
+                <span class="demo-badge">Démo 4</span>
               </label>
             </li>
             <li>
@@ -538,6 +593,7 @@
               <label for="demo">
                 <input type="checkbox" id="demo" title="Démonstration" aria-label="Démonstration fonctionnelle prévue ou vidéo">
                 <span>Démonstration fonctionnelle prévue ou vidéo</span>
+                <span class="demo-badge">Démo 1</span>
               </label>
             </li>
           </ul>
@@ -631,7 +687,7 @@
               </label>
             </li>
           </ul>
-        </div>Validation des besoins
+        </div>
 
         <div class="section">
           <h3>Accès aux données</h3>
@@ -658,5 +714,6 @@
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
