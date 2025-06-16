@@ -14,8 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (filter === 'all') {
                     item.classList.remove('hidden');
                 } else {
-                    if (badge && badge.textContent.trim() === `Démo ${filter.replace('demo', '')}`) {
-                        item.classList.remove('hidden');
+                    if (badge) {
+                        const badgeText = badge.textContent.trim();
+                        if (filter.startsWith('demo') && badgeText === `Démo ${filter.replace('demo', '')}`) {
+                            item.classList.remove('hidden');
+                        } else if (filter === 'dossier' && badgeText === 'Dossier projet') {
+                            item.classList.remove('hidden');
+                        } else if (filter === 'optionnel' && badgeText === 'Optionnel') {
+                            item.classList.remove('hidden');
+                        } else {
+                            item.classList.add('hidden');
+                        }
                     } else {
                         item.classList.add('hidden');
                     }
