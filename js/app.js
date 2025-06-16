@@ -11,8 +11,6 @@ class App {
         document.addEventListener('checklist-updated', () => {
             this.progressManager.updateProgress();
         });
-
-        globalThis.exportToPDF = () => this.exportManager.exportToPDF();
     }
 }
 
