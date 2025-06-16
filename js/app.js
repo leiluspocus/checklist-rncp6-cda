@@ -12,7 +12,7 @@ class App {
             this.progressManager.updateProgress();
         });
 
-        window.exportToPDF = () => this.exportManager.exportToPDF();
+        globalThis.exportToPDF = () => this.exportManager.exportToPDF();
     }
 }
 

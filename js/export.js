@@ -1,6 +1,13 @@
 export class ExportManager {
     constructor() {
-        this.setupEventListeners();
+        this.init();
+    }
+
+    init() {
+        const exportButton = document.querySelector('.export-btn');
+        if (exportButton) {
+            exportButton.addEventListener('click', () => this.exportToPDF());
+        }
     }
 
     exportToPDF() {
