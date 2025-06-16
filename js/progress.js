@@ -1,6 +1,6 @@
 export class ProgressManager {
     constructor() {
-        this.progressBar = document.getElementById('progress-bar');
+        this.progressBar = document.getElementById('progress-fill');
         this.progressText = document.getElementById('progress-text');
         this.setupEventListeners();
         this.loadSavedProgress();
