@@ -8,7 +8,7 @@
     </title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -620,30 +620,31 @@
           <h3>Documentation et déploiement</h3>
           <ul class="checklist">
             <li>
-              <label>
-                <input type="checkbox" aria-label="Documentation technique" />
+              <label for="doc-tech">
+                <input type="checkbox" id="doc-tech" aria-label="Documentation technique" />
                 <span>Documentation technique</span>
                 <span class="demo-badge">Démo 4</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Documentation utilisateur" />
+              <label for="doc-user">
+                <input type="checkbox" id="doc-user" aria-label="Documentation utilisateur" />
                 <span>Documentation utilisateur/utilisatrices</span>
                 <span class="demo-badge">Optionnel</span>
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Stratégie de déploiement" />
+              <label for="strat-deploiement">
+                <input type="checkbox" id="strat-deploiement" aria-label="Stratégie de déploiement" />
                 <span>Stratégie de déploiement</span>
                 <span class="demo-badge">Démo 4</span>
               </label>
             </li>
             <li>
-              <label>
+              <label for="config-env">
                 <input
                   type="checkbox"
+                  id="config-env"
                   aria-label="Configuration des environnements"
                 />
                 <span>Configuration des environnements</span>
@@ -651,8 +652,8 @@
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" aria-label="Procédures de sauvegarde" />
+              <label for="proc-sauvegarde">
+                <input type="checkbox" id="proc-sauvegarde" aria-label="Procédures de sauvegarde" />
                 <span>Procédures de sauvegarde et de restauration</span>
                 <span class="demo-badge"> Optionnel </span>
               </label>
