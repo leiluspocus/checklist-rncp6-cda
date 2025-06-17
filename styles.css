@@ -588,7 +588,15 @@ body {
     background-color: #45a049;
 }
 
-/* Ajustement de l'espacement pour le contenu principal */
 main {
     padding-top: 20px;
+}
+
+.version-tag {
+    display: block;
+    text-align: right;
+    color: #FFF;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    opacity: 0.7;
 } 
