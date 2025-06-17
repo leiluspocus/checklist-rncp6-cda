@@ -264,6 +264,8 @@ body {
     font-size: 1.125rem;
     line-height: 1.5;
     color: var(--text-color);
+    display: inline-block;
+    margin-left: 8px;
 }
 
 .footer {
@@ -599,4 +601,31 @@ main {
     font-size: 0.8rem;
     margin-top: 0.5rem;
     opacity: 0.7;
-} 
+}
+
+.demo-progress {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 10px 0;
+    border-top: 1px solid rgb(255 255 255 / 10%);
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+}
+
+.demo-progress-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.demo-badge-progress {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+}
