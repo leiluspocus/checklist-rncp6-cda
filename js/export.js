@@ -7,25 +7,49 @@ export class ExportManager {
     }
 
     init() {
-        const exportButton = document.querySelector('.export-btn');
-        exportButton.addEventListener('click', () => {
-            this.exportToPDF();
-        });
+        const exportBtn = document.querySelector('.export-btn');
+        if (exportBtn) {
+            exportBtn.addEventListener('click', () => this.exportToPDF());
+        }
     }
 
     async exportToPDF() {
-        const element = document.querySelector('main');
-        if (!element) {
+        console.log('Début de l\'export PDF...');
+        const main = document.querySelector('main');
+        const exportBtn = document.querySelector('.export-btn');
+        
+        if (!main || !exportBtn) {
+            console.error('Éléments requis non trouvés');
             return;
         }
 
-        await this.versionManager.loadVersion();
-        const version = this.versionManager.getFormattedVersion();
-        const date = new Date().toLocaleDateString('fr-FR').replace(/\//g, '-');
+        const content = main.cloneNode(true);
+        
+        const versionElement = document.getElementById('version-number');
+        const version = versionElement ? versionElement.textContent : '';
+        
+        const header = document.createElement('div');
+        header.className = 'pdf-header';
+        header.innerHTML = `
+            <h1>Checklist CDA 6</h1>
+            <p>${version}</p>
+            <p>Date d'export : ${new Date().toLocaleDateString('fr-FR')}</p>
+        `;
+        content.insertBefore(header, content.firstChild);
 
-        const opt = {
+        const items = content.querySelectorAll('.item');
+        items.forEach(item => {
+            const isChecked = item.querySelector('input[type="checkbox"]').checked;
+            const isVisible = !item.classList.contains('hidden');
+            
+            if (!isChecked || !isVisible) {
+                item.style.display = 'none';
+            }
+        });
+
+        const options = {
             margin: [0.5, 0.5, 0.5, 0.5],
-            filename: `checklist-cda-${version}-${date}.pdf`,
+            filename: 'checklist-progress.pdf',
             image: { type: 'jpeg', quality: 1 },
             html2canvas: { 
                 scale: 2,
@@ -39,11 +63,20 @@ export class ExportManager {
                 orientation: 'portrait',
                 compress: true
             },
-            pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+            pagebreak: { 
+                mode: ['avoid-all', 'css', 'legacy'],
+                before: '.item',
+                avoid: ['h1', 'h2', 'h3', 'table', 'img']
+            }
         };
-        
-        html2pdf().set(opt).from(element).save().catch(error => {
-            console.error('Erreur lors de la génération du PDF:', error);
-        });
+
+        try {
+            console.log('Configuration html2pdf...');
+            await html2pdf().set(options).from(content).save();
+            console.log('Export PDF terminé avec succès');
+        } catch (error) {
+            console.error('Erreur lors de l\'export PDF:', error);
+            alert('Une erreur est survenue lors de l\'export PDF. Veuillez réessayer.');
+        }
     }
 } 
