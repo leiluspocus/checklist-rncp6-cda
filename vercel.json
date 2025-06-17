@@ -2,11 +2,12 @@
     "version": 2,
     "builds": [
         {
-            "src": "**/*.html",
+            "src": "**/*",
             "use": "@vercel/static"
         }
     ],
     "buildCommand": "bash deploy.sh",
     "outputDirectory": ".",
-    "public": true
+    "public": true,
+    "cleanUrls": true
 } 
