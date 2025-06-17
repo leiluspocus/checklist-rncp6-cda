@@ -1,5 +1,8 @@
+import { VersionManager } from './version-manager.js';
+
 export class ExportManager {
     constructor() {
+        this.versionManager = new VersionManager();
         this.init();
     }
 
@@ -10,15 +13,19 @@ export class ExportManager {
         });
     }
 
-    exportToPDF() {
+    async exportToPDF() {
         const element = document.querySelector('main');
         if (!element) {
             return;
         }
 
+        await this.versionManager.loadVersion();
+        const version = this.versionManager.getFormattedVersion();
+        const date = new Date().toLocaleDateString('fr-FR').replace(/\//g, '-');
+
         const opt = {
             margin: [0.5, 0.5, 0.5, 0.5],
-            filename: 'checklist-progress.pdf',
+            filename: `checklist-cda-${version}-${date}.pdf`,
             image: { type: 'jpeg', quality: 1 },
             html2canvas: { 
                 scale: 2,

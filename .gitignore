@@ -27,4 +27,6 @@ jspm_packages/
 /build
 
 # Stylelint cache
-.stylelintcache 
+.stylelintcache
+
+.vercel 

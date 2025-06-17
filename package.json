@@ -8,7 +8,9 @@
     "lint:css": "stylelint \"**/*.css\" --fix",
     "lint": "npm run lint:html && npm run lint:css",
     "lint:fix": "npm run lint:css",
-    "test:a11y": "node test-a11y.js"
+    "test:a11y": "node test-a11y.js",
+    "build": "bash deploy.sh",
+    "deploy": "vercel --prod"
   },
   "repository": {
     "type": "git",
@@ -21,7 +23,7 @@
     "url": "https://github.com/anais0210/checklist-rncp6-cda/issues"
   },
   "homepage": "https://github.com/anais0210/checklist-rncp6-cda#readme",
-  "description": "Checklist du rapport de projet CDA",
+  "description": "Checklist pour le rapport de projet CDA",
   "devDependencies": {
     "@axe-core/playwright": "^4.8.2",
     "htmlhint": "^1.5.1",
@@ -29,5 +31,8 @@
     "stylelint": "^16.20.0",
     "stylelint-config-recommended": "^16.0.0",
     "stylelint-config-standard": "^38.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
